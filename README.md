@@ -9,4 +9,5 @@ Before committing to the repo, read these [commit message guidelines](https://gi
 
 ### Projects
 
+* PeopleTracker - a django app to track when people will be in halls in a certain transition.
 * Any project ideas? Put 'em in here!

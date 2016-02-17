@@ -4,6 +4,9 @@ A repository for any collaborative projects in the school. A place for learning 
 
 If there are any issues, questions about code, the repository, or otherwise, shoot me an email at jack.michaud@asdnh.org
 
+Before committing to the repo, read these [commit message guidelines](https://github.com/erlang/otp/wiki/Writing-good-commit-messages).
+
+
 ### Projects
 
 * Any project ideas? Put 'em in here!

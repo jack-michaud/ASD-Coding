@@ -17,14 +17,14 @@ class Student(models.Model):
 	)
 	grade = models.CharField(max_length=2, choices=grade_choices, default="6")
 	#advisory = models.ForeignKey('Advisory', on_delete=models.SET_DEFAULT, default=1, related_name="Advisory+")
-	class_per1 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1, related_name="Period 1+") #Default is study in Cafe (room #CAF)
-	class_per2 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1, related_name="Period 2+")
-	class_per3 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1, related_name="Period 3+")
-	class_per4 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1, related_name="Period 4+")
-	class_per5 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1, related_name="Period 5+")
-	class_per6 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1, related_name="Period 6+")
-	class_per7 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1, related_name="Period 7+")
-	class_per8 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1, related_name="Period 8+")
+	class_per1 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1443, related_name="Period 1443+") #Default is study in Cafe (room #CAF)
+	class_per2 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1443, related_name="Period 2+")
+	class_per3 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1443, related_name="Period 3+")
+	class_per4 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1443, related_name="Period 4+")
+	class_per5 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1443, related_name="Period 5+")
+	class_per6 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1443, related_name="Period 6+")
+	class_per7 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1443, related_name="Period 7+")
+	class_per8 = models.ForeignKey('Class', on_delete=models.SET_DEFAULT, default=1443, related_name="Period 8+")
 
 	def __str__(self):
 		return self.last_name

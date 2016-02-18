@@ -17,12 +17,12 @@ class StudentAdmin(admin.ModelAdmin):
 
 class ClassAdmin(admin.ModelAdmin):
 	fieldsets = [
-		("Course Title", {"fields": ['title']}),
+		("Course Title", {"fields": ['title', 'course_number']}),
 		("Rooms", {"fields": ['room_per1', 'room_per2', 'room_per3', 'room_per4'
 		, 'room_per5', 'room_per6', 'room_per7', 'room_per8']}
 		)
 	]
-	list_display = ['title']
+	list_display = ['id','title', 'course_number']
 
 admin.site.register(Student, StudentAdmin)
 admin.site.register(Class, ClassAdmin)

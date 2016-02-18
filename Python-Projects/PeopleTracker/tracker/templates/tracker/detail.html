@@ -1,0 +1,70 @@
+<ul>
+	{{ student.last_name }}, {{ student.first_name }}
+	<ol>
+		<li>{{ student.class_per1 }}, room {{ student.class_per1.room_per1 }}</li>
+		<li>{{ student.class_per2 }}, room {{ student.class_per2.room_per2 }}</li>
+		<li>{{ student.class_per3 }}, room {{ student.class_per3.room_per3 }}</li>
+		<li>{{ student.class_per4 }}, room {{ student.class_per4.room_per4 }}</li>
+		<li>{{ student.class_per5 }}, room {{ student.class_per5.room_per5 }}</li>
+		<li>{{ student.class_per6 }}, room {{ student.class_per6.room_per6 }}</li>
+		<li>{{ student.class_per7 }}, room {{ student.class_per7.room_per7 }}</li>
+		<li>{{ student.class_per8 }}, room {{ student.class_per8.room_per8 }}</li>
+	</ol>
+</ul>
+
+Students in Period 1 with you:
+
+{% for student in students_in.per_1 %}
+	<li>{{ student }}</li>
+{% endfor %}
+<br>
+
+Students in Period 2 with you:
+
+{% for student in students_in.per_2 %}
+	<li>{{ student }}</li>
+{% endfor %}
+<br>
+
+Students in Period 3 with you:
+
+{% for student in students_in.per_3 %}
+	<li>{{ student }}</li>
+{% endfor %}
+<br>
+
+Students in Period 4 with you:
+
+{% for student in students_in.per_4 %}
+	<li>{{ student }}</li>
+{% endfor %}
+<br>
+
+Students in Period 5 with you:
+
+{% for student in students_in.per_5 %}
+	<li>{{ student }}</li>
+{% endfor %}
+<br>
+
+Students in Period 6 with you:
+
+{% for student in students_in.per_6 %}
+	<li>{{ student }}</li>
+{% endfor %}
+<br>
+
+Students in Period 7 with you:
+
+{% for student in students_in.per_7 %}
+	<li>{{ student }}</li>
+{% endfor %}
+<br>
+
+Students in Period 8 with you:
+
+{% for student in students_in.per_8 %}
+	<li>{{ student }}</li>
+{% endfor %}
+<br>
+

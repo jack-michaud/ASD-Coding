@@ -3,6 +3,8 @@ from .models import *
 
 # Register your models here.
 class StudentAdmin(admin.ModelAdmin):
+	class Meta:
+		ordering = ['last_name']
 	fieldsets = [
 		('Name', 	{"fields":['first_name', 'last_name']}),
 		(None, 		{"fields":['grade']}), 
@@ -13,16 +15,22 @@ class StudentAdmin(admin.ModelAdmin):
 					}	
 		)
 	]
-	list_display = ['last_name', 'grade']
+	search_fields = ['last_name', 'first_name']
+	list_display = ['last_name','first_name', 'grade']
 
 class ClassAdmin(admin.ModelAdmin):
 	fieldsets = [
 		("Course Title", {"fields": ['title', 'course_number']}),
 		("Rooms", {"fields": ['room_per1', 'room_per2', 'room_per3', 'room_per4'
-		, 'room_per5', 'room_per6', 'room_per7', 'room_per8']}
+					, 'room_per5', 'room_per6', 'room_per7', 'room_per8']
+				}
 		)
 	]
-	list_display = ['id','title', 'course_number']
+	search_fields = ['title', 'course_number']
+	list_display = ['title', 'course_number']
+	
+	class Meta:
+		ordering = ['title']
 
 admin.site.register(Student, StudentAdmin)
 admin.site.register(Class, ClassAdmin)

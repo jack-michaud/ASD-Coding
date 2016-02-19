@@ -3,7 +3,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 admin.autodiscover()
 
-import hello.views
 import tracker.urls
 
 # Examples:
@@ -12,7 +11,6 @@ import tracker.urls
 
 urlpatterns = [
     #url(r'^$', hello.views.index, name='index'),
-    url(r'^db', hello.views.db, name='db'),
     url(r'^', include('tracker.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]

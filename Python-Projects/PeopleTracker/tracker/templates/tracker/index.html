@@ -1,3 +1,7 @@
+{% extends "base.html" %}
+
+
+{% block content %}
 {% for student in student_list %}
 	<ul>
 		{{ student.last_name }}, {{ student.first_name }}
@@ -13,3 +17,4 @@
 		</ol>
 	</ul>
 {% endfor %}
+{% endblock %}

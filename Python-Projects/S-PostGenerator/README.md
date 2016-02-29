@@ -1,6 +1,7 @@
 ##S***post Generator
 
 A random post generator for Tumblr.
+(by Jack Michaud)
 
 #####Requirements:
     - pip install pytumblr
